@@ -20,7 +20,7 @@ A static marketing website for Convene365: plain HTML, CSS and JavaScript. No bu
 ## Before you publish
 
 1. **Contact email.** Set `CONTACT_EMAIL` at the top of `assets/js/main.js`. It is used by every "Email us" link and by the contact form. It is currently `business@branqorinc.com`.
-2. **Prices.** `pricing.html` shows yearly starting prices (Starter from $1,500, Professional from $4,000, Enterprise custom, setup from $1,500). Search the file for `From $` and `from $1,500` to change them.
+2. **Prices.** `pricing.html` shows yearly starting prices (Starter from $625, Professional from $1,099, Enterprise custom, setup from $1,500). Search the file for `From $` and `from $1,500` to change them.
 3. **Customer Insights price.** `compare.html` quotes Microsoft's list price as checked in October 2026. Check it again before publishing and update the footnote date.
 
 ## Files
