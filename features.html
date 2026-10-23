@@ -1,241 +1,545 @@
 <!doctype html>
-<html lang="en" class="no-js">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Features | Convene365</title>
-  <meta name="description" content="Events and agendas, ticketing with live capacity, an English attendee website, QR check-in and Power BI reporting, all on Microsoft Power Platform.">
-  <meta name="theme-color" content="#1F3A5F">
-  <meta property="og:title" content="Features | Convene365">
-  <meta property="og:description" content="Events and agendas, ticketing with live capacity, an English attendee website, QR check-in and Power BI reporting, all on Microsoft Power Platform.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/img/screens/portal-home.webp">
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&amp;family=Source+Sans+3:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Convene365 home">
-        <img src="assets/img/logo-mark.svg" alt="" width="38" height="38">
-        <span class="wordmark">Convene<span>365</span></span>
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-      <nav class="nav" id="site-nav" aria-label="Main">
-        <a href="index.html">Home</a>
-        <a href="features.html" aria-current="page">Features</a>
-        <a href="compare.html">Compare</a>
-        <a href="pricing.html">Pricing</a>
-        <a class="btn btn-primary" href="contact.html?topic=demo">Book a demo</a>
+<html lang="en" class="no-js" id="top">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>A connected event platform | Convene365</title>
+    <meta
+      name="description"
+      content="Explore Convene365 planning, tickets, attendee websites, QR check-in and Power BI reporting on Microsoft Power Platform."
+    />
+    <meta name="theme-color" content="#f7f6f2" />
+    <meta
+      property="og:title"
+      content="A connected event platform | Convene365"
+    />
+    <meta
+      property="og:description"
+      content="Explore Convene365 planning, tickets, attendee websites, QR check-in and Power BI reporting on Microsoft Power Platform."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="assets/fonts/manrope-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Convene365 home"
+          ><img
+            src="assets/img/logo-mark.svg"
+            width="36"
+            height="36"
+            alt=""
+          /><span
+            >convene<span class="brand-number">365</span
+            ><span class="brand-dot">.</span></span
+          ></a
+        ><button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open menu"
+        >
+          <span></span><span></span>
+        </button>
+        <nav id="site-nav" class="navigation" aria-label="Main navigation">
+          <a href="features.html" aria-current="page">The platform</a
+          ><a href="compare.html">Why Convene365</a
+          ><a href="pricing.html">Pricing</a
+          ><a class="button button-small" href="contact.html?topic=demo"
+            >Let’s talk<span aria-hidden="true">↗</span></a
+          >
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-intro container">
+        <span class="eyebrow"
+          ><span class="status-dot"></span>The platform</span
+        >
+        <h1>From first idea.<br />To <em>full house.</em></h1>
+        <p class="lead">
+          One connected event journey, built on Power Platform. Take a look
+          around the tools that make it happen.
+        </p>
+      </section>
+      <nav class="section-nav container" aria-label="Platform sections">
+        <a href="#planning">01 Planning</a><a href="#ticketing">02 Ticketing</a
+        ><a href="#website">03 Registration</a
+        ><a href="#check-in">04 Check-in</a
+        ><a href="#reporting">05 Reporting</a>
       </nav>
-    </div>
-  </header>
-
-  <main id="main">
-    <section class="page-hero">
-      <div class="container">
-        <span class="eyebrow">Features</span>
-        <h1>Everything an event team needs, on the platform you already trust</h1>
-        <p class="lead">From the first plan to the final report, every step happens in your Microsoft environment and every record lands in Dataverse.</p>
-      </div>
-    </section>
-
-    <section class="section" id="planning">
-      <div class="container">
-        <div class="split">
-          <div class="reveal">
-            <span class="eyebrow">Plan</span>
-            <h2>Events, agendas and venues in one app</h2>
-            <p class="lead">The Event Lifecycle guides each event through Plan, Build, Publish, Run and Close, showing what is still missing at every stage.</p>
-            <ul class="checks"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg><span>In-person, virtual and hybrid events, with the meeting link required where it matters</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg><span>Sessions by day, room and level, kept inside the event's dates automatically</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg><span>Venues and rooms with capacity and layout</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg><span>Event codes, budgets and CPD hours for later certificates</span></li></ul>
-          </div>
-          <div class="reveal reveal-delay-2"><div class="frame-browser ">
-          <div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>Convene365 Admin › Sessions</span></div>
-          <img src="assets/img/screens/admin-sessions.webp" alt="The Sessions list in the Convene365 Admin app showing a two-day summit agenda across halls" width="1600" height="921" loading="lazy">
-        </div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft" id="ticketing">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Sell</span>
-          <h2>Ticketing that adds up, every time</h2>
-          <p class="lead">Several ticket types per event, each with its own price, tax, quantity, sales window and per-order limits. Amounts are calculated on the server, so nobody can change a price in the browser.</p>
-        </div>
-        <div class="grid grid-3">
-          <article class="card reveal"><span class="icon "><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg></span><h3>Early bird, VIP, student</h3><p>Any number of ticket types, each sold only inside its own sales window.</p></article>
-          <article class="card reveal reveal-delay-1"><span class="icon "><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8a2 2 0 0 0 0 4v0a2 2 0 0 1 0 4v2a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-2a2 2 0 0 1 0-4 2 2 0 0 1 0-4V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1z"/><path d="M14 5v14" stroke-dasharray="2 2"/></svg></span><h3>Live capacity</h3><p>Event and ticket limits are checked at the moment of booking, so the last seat sells once.</p></article>
-          <article class="card reveal reveal-delay-2"><span class="icon "><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg></span><h3>Card payments</h3><p>Stripe Checkout, with each payment confirmed with Stripe before the booking is confirmed. Free events confirm instantly.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="website">
-      <div class="container">
-        <div class="split reverse">
-          <div class="reveal">
-            <span class="eyebrow">Register</span>
-            <h2>A branded website your attendees will actually use</h2>
-            <p class="lead">Built on Power Pages, in your colours and with your logo, in English.</p>
-            <ul class="checks"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg><span>Browse upcoming events, agenda and venue with a map link</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg><span>Book for yourself and colleagues in three short steps</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg><span>Pay by card, or confirm straight away when it's free</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg><span>Ticket email with QR code and calendar file, and a My Tickets page</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg><span>Give feedback after the event: ratings, NPS and comments</span></li></ul>
-          </div>
-          <div class="reveal reveal-delay-2"><div class="frame-browser ">
-          <div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>events.your-company.com</span></div>
-          <img src="assets/img/screens/portal-home.webp" alt="The Convene365 attendee website listing upcoming events" width="1600" height="511" loading="lazy">
-        </div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-dark" id="check-in">
-      <div class="container">
-        <div class="split">
-          <div class="reveal">
-            <span class="eyebrow">Check in</span>
-            <h2>Green means go. Red means stop.</h2>
-            <p class="lead">The Convene365 Check-in app runs on any phone through Power Apps. Door staff scan the QR code and read the colour.</p>
-            <ul class="checks"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg><span>Valid ticket: one tap checks the attendee in</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg><span>Already checked in, cancelled, wrong event or not found: the reason is on screen</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg><span>Search by name or email when there's no QR code</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg><span>Every check-in records the time and who scanned it</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg><span>Works offline in halls with poor signal</span></li></ul>
-          </div>
-          <div class="phones reveal reveal-delay-2">
-            <figure><div class="frame-phone "><img src="assets/img/screens/checkin-events.webp" alt="Today's events in the Check-in app" width="560" height="987" loading="lazy"></div><figcaption style="color:#C9D6E4">Today's events</figcaption></figure>
-            <figure><div class="frame-phone "><img src="assets/img/screens/checkin-scan.webp" alt="Ready to scan screen" width="560" height="995" loading="lazy"></div><figcaption style="color:#C9D6E4">Scan</figcaption></figure>
-            <figure><div class="frame-phone "><img src="assets/img/screens/checkin-stats.webp" alt="Check-in statistics: 6 of 17 checked in" width="560" height="998" loading="lazy"></div><figcaption style="color:#C9D6E4">Live stats</figcaption></figure>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="reporting">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Report</span>
-          <h2>Know what every event achieved</h2>
-          <p class="lead">Four Power BI pages read your Dataverse directly, so the numbers are always your own. Pick an event from the slicer, or see every event together.</p>
-        </div>
-        <div class="report-gallery reveal">
-          <div class="tabs" role="tablist" aria-label="Power BI report pages"><button class="tab" type="button" role="tab" id="tab-overview" aria-controls="panel-overview" aria-selected="true" tabindex="0">Executive overview</button><button class="tab" type="button" role="tab" id="tab-trend" aria-controls="panel-trend" aria-selected="false" tabindex="-1">Registration trend</button><button class="tab" type="button" role="tab" id="tab-live" aria-controls="panel-live" aria-selected="false" tabindex="-1">Live event day</button><button class="tab" type="button" role="tab" id="tab-engagement" aria-controls="panel-engagement" aria-selected="false" tabindex="-1">Engagement and feedback</button></div>
-            <div class="tab-panel" role="tabpanel" id="panel-overview" aria-labelledby="tab-overview" tabindex="0">
-              <div class="frame-browser">
-                <div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>Power BI › Convene365 › Executive overview</span></div>
-                <img src="assets/img/screens/pbi-overview.webp" alt="Power BI Executive overview page: Events, registrations, check-in rate, revenue, average rating and NPS at a glance, with revenue by event and a summary table for every event." width="1350" height="751" loading="lazy">
-              </div>
-              <p class="tab-caption">Events, registrations, check-in rate, revenue, average rating and NPS at a glance, with revenue by event and a summary table for every event.</p>
-            </div>
-            <div class="tab-panel" role="tabpanel" id="panel-trend" aria-labelledby="tab-trend" tabindex="0" hidden>
-              <div class="frame-browser">
-                <div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>Power BI › Convene365 › Registration trend</span></div>
-                <img src="assets/img/screens/pbi-trend.webp" alt="Power BI Registration trend page: Tickets booked per day, the mix of ticket types and where bookings came from: the website, the back office or an import." width="1342" height="762" loading="lazy">
-              </div>
-              <p class="tab-caption">Tickets booked per day, the mix of ticket types and where bookings came from: the website, the back office or an import.</p>
-            </div>
-            <div class="tab-panel" role="tabpanel" id="panel-live" aria-labelledby="tab-live" tabindex="0" hidden>
-              <div class="frame-browser">
-                <div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>Power BI › Convene365 › Live event day</span></div>
-                <img src="assets/img/screens/pbi-live.webp" alt="Power BI Live event day page: Check-ins every 15 minutes, the no-show rate by ticket type and a live list of arrivals, ready for a screen at the venue." width="1348" height="748" loading="lazy">
-              </div>
-              <p class="tab-caption">Check-ins every 15 minutes, the no-show rate by ticket type and a live list of arrivals, ready for a screen at the venue.</p>
-            </div>
-            <div class="tab-panel" role="tabpanel" id="panel-engagement" aria-labelledby="tab-engagement" tabindex="0" hidden>
-              <div class="frame-browser">
-                <div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>Power BI › Convene365 › Engagement and feedback</span></div>
-                <img src="assets/img/screens/pbi-engagement.webp" alt="Power BI Engagement and feedback page: Average rating for every session, the spread of NPS answers from 0 to 10, and every comment attendees left." width="1351" height="762" loading="lazy">
-              </div>
-              <p class="tab-caption">Average rating for every session, the spread of NPS answers from 0 to 10, and every comment attendees left.</p>
-            </div>
-        </div>
-        <ul class="checks checks-row">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg><span>Registrations, check-in rate, revenue, ratings and NPS</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg><span>No-shows by ticket type, and arrivals as they happen</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg><span>Event managers see only their own events</span></li>
-        </ul>
-        <p class="note">Screens show the Convene365 demo dataset: a two-day summit and a workshop, about 300 attendees.</p>
-      </div>
-    </section>
-
-    <section class="section section-soft" id="security">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Security</span>
-          <h2>Enterprise controls, without the extra work</h2>
-        </div>
-        <div class="grid grid-3">
-          <article class="card reveal"><span class="icon "><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.2a5 5 0 0 1 5.5 4.8"/></svg></span><h3>Six ready-made roles</h3><p>Administrator, Event Manager, Coordinator, Finance, Check-in Staff and Executive.</p></article>
-          <article class="card reveal reveal-delay-1"><span class="icon "><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span><h3>Finance-only amounts</h3><p>Prices, totals, payments and budgets are visible only to the finance group.</p></article>
-          <article class="card reveal reveal-delay-2"><span class="icon "><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg></span><h3>No card data stored</h3><p>Payment happens on Stripe's secure page. Your systems never see a card number.</p></article>
-          <article class="card reveal"><span class="icon "><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></span><h3>Audited check-ins</h3><p>Every check-in records who scanned it and when; Dataverse auditing logs every change.</p></article>
-          <article class="card reveal reveal-delay-1"><span class="icon "><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM20 14v1M14 20h1M18 18h3v3"/></svg></span><h3>Private QR codes</h3><p>A QR code holds only a random token, never a name or email address.</p></article>
-          <article class="card reveal reveal-delay-2"><span class="icon "><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></svg></span><h3>Your environment</h3><p>Installed as a managed solution in your own tenant, so your Microsoft policies apply.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-sm">
-      <div class="container">
-        <div class="cta-band reveal">
+      <section class="section container" id="planning">
+        <div class="section-heading">
           <div>
-            <h2>See Convene365 run a real event</h2>
-            <p>A 15-minute demo: create an event, book on the attendee website, pay, get the QR ticket, scan it at the door and watch the report update.</p>
+            <span class="eyebrow">01 / Set the stage</span>
+            <h2>All the details.<br /><em>One place.</em></h2>
           </div>
-          <div class="actions">
-            <a class="btn btn-primary" href="contact.html?topic=demo">Book a demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <a class="btn btn-ghost" href="contact.html?topic=pilot">Run a pilot event</a>
+          <div>
+            <p>
+              Build the agenda, arrange the rooms and give your team a shared
+              picture. The event lifecycle guides you from Plan to Build,
+              Publish, Run and Close.
+            </p>
+            <ul class="check-list">
+              <li>
+                <span aria-hidden="true">✓</span>In-person, virtual and hybrid
+                events
+              </li>
+              <li>
+                <span aria-hidden="true">✓</span>Sessions, rooms, capacity and
+                event budgets
+              </li>
+              <li>
+                <span aria-hidden="true">✓</span>Work accounts and familiar
+                Microsoft controls
+              </li>
+            </ul>
           </div>
         </div>
+        <figure class="product-screen">
+          <div class="screen-top">
+            <span class="screen-dots" aria-hidden="true">● ● ●</span
+            ><span>Convene365 Admin / Sessions</span
+            ><span aria-hidden="true">↗</span>
+          </div>
+          <img
+            src="assets/img/screens/admin-sessions.webp"
+            alt="Sessions in the Admin app showing a summit agenda across rooms"
+            width="1600"
+            height="921"
+            loading="lazy"
+          />
+        </figure>
+        <p class="image-note">
+          Actual product screen. Demo events and attendees.
+        </p>
+      </section>
+      <section class="ticketing-section" id="ticketing">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">02 / Open the doors</span>
+              <h2>A ticket for<br /><em>every kind of guest.</em></h2>
+            </div>
+            <p>
+              Early bird, VIP or student. Set your prices, sales windows and
+              limits. Keep the numbers connected from the moment someone books.
+            </p>
+          </div>
+          <div class="ticket-grid">
+            <article class="ticket-card">
+              <span class="eyebrow">ADMIT ONE / 01</span>
+              <h3>Make it their ticket.</h3>
+              <p>
+                Create ticket types with their own price, tax, quantity and
+                booking window.
+              </p>
+              <div class="ticket-tear">
+                <span>CONVENE365</span><span aria-hidden="true">↗</span>
+              </div>
+            </article>
+            <article class="ticket-card">
+              <span class="eyebrow">ADMIT ONE / 02</span>
+              <h3>The last seat sells once.</h3>
+              <p>
+                Capacity is checked at booking, for both the event and the
+                individual ticket type.
+              </p>
+              <div class="ticket-tear">
+                <span>CONVENE365</span><span aria-hidden="true">↗</span>
+              </div>
+            </article>
+            <article class="ticket-card">
+              <span class="eyebrow">ADMIT ONE / 03</span>
+              <h3>Payment, confirmed.</h3>
+              <p>
+                Stripe handles card checkout. Paid bookings are confirmed after
+                payment verification; free bookings confirm instantly.
+              </p>
+              <div class="ticket-tear">
+                <span>CONVENE365</span><span aria-hidden="true">↗</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section container" id="website">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">03 / Make a good first impression</span>
+            <h2>Your event.<br /><em>Their easy way in.</em></h2>
+          </div>
+          <div>
+            <p>
+              A Power Pages website in your colours, with your logo. Attendees
+              browse, book and come back for their tickets without the email
+              back-and-forth.
+            </p>
+            <ul class="check-list">
+              <li>
+                <span aria-hidden="true">✓</span>Book for yourself and
+                colleagues
+              </li>
+              <li>
+                <span aria-hidden="true">✓</span>QR ticket emails and calendar
+                invitations
+              </li>
+              <li>
+                <span aria-hidden="true">✓</span>My Tickets, event agendas and
+                feedback
+              </li>
+            </ul>
+          </div>
+        </div>
+        <figure class="product-screen portal-screen">
+          <div class="screen-top">
+            <span class="screen-dots" aria-hidden="true">● ● ●</span
+            ><span>The attendee website / Power Pages</span
+            ><span aria-hidden="true">↗</span>
+          </div>
+          <img
+            src="assets/img/screens/portal-home.webp"
+            alt="Branded Convene365 event website showing upcoming events"
+            width="1600"
+            height="511"
+            loading="lazy"
+          />
+        </figure>
+      </section>
+      <section class="checkin-feature" id="check-in">
+        <div class="container editorial-grid">
+          <div class="editorial-copy">
+            <span class="eyebrow">04 / Be ready when they arrive</span>
+            <h2>Less queue.<br /><em>More hello.</em></h2>
+            <p>
+              Give the people at the door a tool built for the job. Scan a QR
+              code, see the ticket status and check the attendee in.
+            </p>
+            <ul class="check-list">
+              <li>
+                <span aria-hidden="true">✓</span>Clear results for valid, used
+                or cancelled tickets
+              </li>
+              <li>
+                <span aria-hidden="true">✓</span>Search by name or email when a
+                QR code is missing
+              </li>
+              <li>
+                <span aria-hidden="true">✓</span>Check-in time and staff member
+                recorded
+              </li>
+              <li>
+                <span aria-hidden="true">✓</span>Offline support using the last
+                downloaded event data
+              </li>
+            </ul>
+            <p class="small-print">
+              When offline, use one device per entrance and reconnect to sync
+              check-ins.
+            </p>
+          </div>
+          <div class="phone-pair">
+            <figure class="phone">
+              <img
+                src="assets/img/screens/checkin-events.webp"
+                alt="Check-in app event selection"
+                width="560"
+                height="987"
+                loading="lazy"
+              />
+            </figure>
+            <figure class="phone">
+              <img
+                src="assets/img/screens/checkin-stats.webp"
+                alt="Check-in app with attendance statistics"
+                width="560"
+                height="998"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section class="section container" id="reporting">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">05 / Know what made a difference</span>
+            <h2>Turn your event<br />into <em>your next insight.</em></h2>
+          </div>
+          <p>
+            Four Power BI report views, connected to your Dataverse. From the
+            first registration to the feedback after the final session.
+          </p>
+        </div>
+        <div class="report-gallery" data-tabs>
+          <div
+            class="report-tabs"
+            role="tablist"
+            aria-label="Power BI report views"
+          >
+            <button
+              type="button"
+              role="tab"
+              id="report-tab-overview"
+              aria-controls="report-overview"
+              aria-selected="true"
+              tabindex="0"
+            >
+              Executive overview</button
+            ><button
+              type="button"
+              role="tab"
+              id="report-tab-trend"
+              aria-controls="report-trend"
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Registration trends</button
+            ><button
+              type="button"
+              role="tab"
+              id="report-tab-live"
+              aria-controls="report-live"
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Event day</button
+            ><button
+              type="button"
+              role="tab"
+              id="report-tab-engagement"
+              aria-controls="report-engagement"
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Feedback
+            </button>
+          </div>
+          <div
+            role="tabpanel"
+            id="report-overview"
+            aria-labelledby="report-tab-overview"
+            tabindex="0"
+          >
+            <figure class="product-screen">
+              <div class="screen-top">
+                <span class="screen-dots" aria-hidden="true">● ● ●</span
+                ><span>Power BI / Executive overview</span
+                ><span aria-hidden="true">↗</span>
+              </div>
+              <img
+                src="assets/img/screens/pbi-overview.webp"
+                alt="Power BI Executive overview using demo data"
+                width="1350"
+                height="751"
+                loading="lazy"
+              />
+            </figure>
+            <p class="image-note">
+              The big picture: registrations, revenue, attendance, ratings and
+              NPS. Screens show demo data.
+            </p>
+          </div>
+          <div
+            role="tabpanel"
+            id="report-trend"
+            aria-labelledby="report-tab-trend"
+            tabindex="0"
+            hidden
+          >
+            <figure class="product-screen">
+              <div class="screen-top">
+                <span class="screen-dots" aria-hidden="true">● ● ●</span
+                ><span>Power BI / Registration trends</span
+                ><span aria-hidden="true">↗</span>
+              </div>
+              <img
+                src="assets/img/screens/pbi-trend.webp"
+                alt="Power BI Registration trends using demo data"
+                width="1342"
+                height="762"
+                loading="lazy"
+              />
+            </figure>
+            <p class="image-note">
+              See when bookings happen, which tickets sell and where
+              registrations come from. Screens show demo data.
+            </p>
+          </div>
+          <div
+            role="tabpanel"
+            id="report-live"
+            aria-labelledby="report-tab-live"
+            tabindex="0"
+            hidden
+          >
+            <figure class="product-screen">
+              <div class="screen-top">
+                <span class="screen-dots" aria-hidden="true">● ● ●</span
+                ><span>Power BI / Event day</span
+                ><span aria-hidden="true">↗</span>
+              </div>
+              <img
+                src="assets/img/screens/pbi-live.webp"
+                alt="Power BI Event day using demo data"
+                width="1348"
+                height="748"
+                loading="lazy"
+              />
+            </figure>
+            <p class="image-note">
+              Check-ins in 15-minute intervals, no-shows by ticket type and
+              recent arrivals. Screens show demo data.
+            </p>
+          </div>
+          <div
+            role="tabpanel"
+            id="report-engagement"
+            aria-labelledby="report-tab-engagement"
+            tabindex="0"
+            hidden
+          >
+            <figure class="product-screen">
+              <div class="screen-top">
+                <span class="screen-dots" aria-hidden="true">● ● ●</span
+                ><span>Power BI / Feedback</span
+                ><span aria-hidden="true">↗</span>
+              </div>
+              <img
+                src="assets/img/screens/pbi-engagement.webp"
+                alt="Power BI Feedback using demo data"
+                width="1351"
+                height="762"
+                loading="lazy"
+              />
+            </figure>
+            <p class="image-note">
+              Explore session ratings, NPS responses and attendee comments.
+              Screens show demo data.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="security-section" id="security">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Built on your foundation</span>
+              <h2>Behind every event.<br /><em>The right controls.</em></h2>
+            </div>
+            <p>
+              Convene365 is installed as a managed solution in your tenant, so
+              your Microsoft policies remain part of the picture.
+            </p>
+          </div>
+          <div class="security-grid">
+            <article>
+              <h3>Roles with a purpose</h3>
+              <p>
+                Six ready-made roles, from Event Manager and Finance to Check-in
+                Staff and Executive.
+              </p>
+            </article>
+            <article>
+              <h3>Finance stays with finance</h3>
+              <p>
+                Prices, payments, totals and budgets are restricted to the
+                finance group.
+              </p>
+            </article>
+            <article>
+              <h3>An audit trail</h3>
+              <p>
+                Record who checked in each attendee and when, with Dataverse
+                auditing for changes.
+              </p>
+            </article>
+            <article>
+              <h3>Private by design</h3>
+              <p>
+                QR codes carry random tokens, not names or emails. Card details
+                stay with Stripe.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="closing">
+        <div class="container closing-inner">
+          <div>
+            <span class="eyebrow">Let’s bring it together</span>
+            <h2>Make your next event<br /><em>the easy one.</em></h2>
+          </div>
+          <div>
+            <p>
+              Take a 15-minute look at the whole journey.<br />From creating an
+              event to scanning the first ticket.
+            </p>
+            <a class="button button-light" href="contact.html?topic=demo"
+              >Book your demo<span aria-hidden="true">↗</span></a
+            ><span class="micro">15 minutes. Your questions welcome.</span>
+          </div>
+          <div class="closing-orbit" aria-hidden="true">↗</div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div>
+            <a class="brand" href="index.html" aria-label="Convene365 home"
+              ><img
+                src="assets/img/logo-mark.svg"
+                width="36"
+                height="36"
+                alt=""
+              /><span
+                >convene<span class="brand-number">365</span
+                ><span class="brand-dot">.</span></span
+              ></a
+            >
+            <p>Good things happen<br />when people come together.</p>
+          </div>
+          <div class="footer-links">
+            <div>
+              <span class="eyebrow">Explore</span
+              ><a href="features.html">The platform</a
+              ><a href="compare.html">Why Convene365</a
+              ><a href="pricing.html">Packages &amp; pricing</a>
+            </div>
+            <div>
+              <span class="eyebrow">Say hello</span
+              ><a href="contact.html?topic=demo">Book a demo ↗</a
+              ><a href="contact.html?topic=pilot">Plan a pilot</a
+              ><a href="mailto:business@branqorinc.com" data-contact-email
+                >Email the team</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span
+            >© <span data-year>2026</span> Convene365. A
+            <a href="https://branqorinc.com">Branqor</a> product.</span
+          ><span>Built on Microsoft Power Platform.</span
+          ><a href="#top">Back to top ↑</a>
+        </div>
+        <p class="trademark">
+          Microsoft, Power Platform, Dataverse and Power BI are trademarks of
+          the Microsoft group of companies.
+        </p>
       </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <a class="brand" href="index.html" aria-label="Convene365 home">
-            <img src="assets/img/logo-mark-reversed.svg" alt="" width="34" height="34">
-            <span class="wordmark">Convene<span>365</span></span>
-          </a>
-          <p>Event management on Microsoft Power Platform. Plan, sell tickets, register, check in and report, with every record in your own Dataverse.</p>
-        </div>
-        <div>
-          <h4>Product</h4>
-          <ul>
-            <li><a href="features.html">Features</a></li>
-            <li><a href="features.html#check-in">Check-in app</a></li>
-            <li><a href="features.html#website">Attendee website</a></li>
-            <li><a href="features.html#reporting">Reporting</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Why Convene365</h4>
-          <ul>
-            <li><a href="compare.html">Compare options</a></li>
-            <li><a href="pricing.html">Packages</a></li>
-            <li><a href="pricing.html#faq">FAQ</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Talk to us</h4>
-          <ul>
-            <li><a href="contact.html?topic=demo">Book a demo</a></li>
-            <li><a href="contact.html?topic=pilot">Run a pilot event</a></li>
-            <li><a href="contact.html" data-contact-email>Email us</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>&copy; <span data-year>2026</span> Convene365, a <a href="https://branqorinc.com" rel="noopener">Branqor</a> product.</span>
-        <span>Microsoft, Power Platform, Dataverse and Power BI are trademarks of the Microsoft group of companies.</span>
-      </div>
-    </div>
-  </footer>
-
-  <script src="assets/js/main.js" defer></script>
-</body>
+    </footer>
+  </body>
 </html>
