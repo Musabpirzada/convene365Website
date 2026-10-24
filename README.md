@@ -1,44 +1,54 @@
-# Convene365 website
+# Convene365
 
-A static marketing website for Convene365: plain HTML, CSS and JavaScript. No build step, no framework, no dependencies.
+A complete five-page marketing site in plain HTML, CSS and vanilla JavaScript. No framework, build step or package installation. Fonts, photography and product screenshots are served locally. The contact form loads from HubSpot.
 
-## Open it
+## Preview
 
-- **VS Code:** open this folder, install the *Live Server* extension, right-click `index.html` > *Open with Live Server*.
-- **Without VS Code:** double-click `index.html`. Everything works from the file system.
+Open `index.html` directly, use VS Code Live Server, or run:
+
+```sh
+python3 -m http.server 4173 --bind 127.0.0.1
+```
+
+Then visit http://127.0.0.1:4173. Deploy the five HTML files and the `assets/` directory to any static host.
 
 ## Pages
 
-| File | Purpose |
-| --- | --- |
-| `index.html` | Home: the problem, the solution, the three apps with screenshots, the "last seat" proof, why Convene365 |
-| `features.html` | Planning, ticketing, attendee website, check-in, the four Power BI report pages (tabbed gallery), security |
-| `compare.html` | Interactive comparison with spreadsheets, standalone ticketing sites and D365 Customer Insights – Journeys, plus a fair-fit section |
-| `pricing.html` | Starter, Professional, Enterprise with yearly prices; how billing works (annual invoice); setup services; Microsoft licences; FAQ |
-| `contact.html` | Contact form that opens the visitor's email app with the message filled in |
+- `index.html`: editorial introduction, interactive product walkthrough, check-in, Microsoft foundation and pricing introduction.
+- `features.html`: planning, ticketing, registration, check-in, keyboard-accessible Power BI gallery and security.
+- `compare.html`: focused side-by-side comparison. Choose spreadsheets, ticketing platforms or Customer Insights; all alternatives remain available without JavaScript.
+- `pricing.html`: annual packages, separate setup and licensing costs, billing information and FAQs. Roadmap features are explicitly labelled.
+- `contact.html`: embedded HubSpot enquiry form, with direct email and copy-email alternatives.
 
-## Before you publish
+## Editing
 
+<<<<<<< HEAD
 1. **Contact email.** Set `CONTACT_EMAIL` at the top of `assets/js/main.js`. It is used by every "Email us" link and by the contact form. It is currently `business@branqorinc.com`.
 2. **Prices.** `pricing.html` shows yearly starting prices (Starter from $625, Professional from $1,099, Enterprise custom, setup from $1,500). Search the file for `From $` and `from $1,500` to change them.
 3. **Customer Insights price.** `compare.html` quotes Microsoft's list price as checked in October 2026. Check it again before publishing and update the footnote date.
+=======
+- Shared styles and design tokens: `assets/css/styles.css`.
+- Interactive behavior: `assets/js/main.js`.
+- Recipient: `CONTACT_EMAIL` in JavaScript. Update the matching `mailto:` links and visible email addresses in the HTML too, so contact still works without JavaScript.
+- Prices and package content: `pricing.html`; also update the price introduction in `index.html`.
+- Header and footer are plain HTML in each page. Update all five for navigation changes.
+- The site uses Manrope and DM Sans, self-hosted as WOFF2. Their SIL Open Font License files are in `assets/fonts/`.
+>>>>>>> 970d584a051c47495db911672de09f36937f0d5c
 
-## Files
+## Contact behavior
 
-```
-index.html  features.html  compare.html  pricing.html  contact.html
-assets/
-  css/styles.css        all styles; brand colours are CSS variables at the top
-  js/main.js            menu, scroll reveal, comparison toggles, contact form
-  img/logo-mark.svg            the gathering-C mark (navy dots, amber centre)
-  img/logo-mark-reversed.svg   for dark backgrounds
-  img/favicon.svg              simplified 8-dot mark
-  img/screens/*.webp           app screenshots (website, Admin app, Check-in app, Power BI pbi-*.webp)
-```
+The contact page embeds HubSpot form `03453363-2b64-4092-8175-9bf2694109c7` from portal `246852561` in region `na2`. HubSpot handles the form fields, validation, submissions and confirmation behavior. Manage these in HubSpot.
 
-## Notes
+The embed requires JavaScript and internet access. The direct email link and copy-email control remain available, with additional instructions when JavaScript is disabled. The former local enquiry builder and its automatic `topic` prefill have been removed; any HubSpot field prefill should be configured against the actual HubSpot fields.
 
-- Fonts: Sora (headings, wordmark) and Source Sans 3 (body) from Google Fonts, with system fallbacks.
-- The contact form doesn't send anything from the website; it opens the visitor's email app. To receive submissions without email, connect it later to a form service or a Power Automate HTTP flow.
-- Accessible by default: skip link, keyboard-friendly menu, visible focus, labelled form fields, reduced-motion support.
-- `checkin-search.webp` is included but not used: in that screenshot a label overlaps the attendee name. Retake it if you want to show search.
+## Design references and assets
+
+The redesign takes inspiration from [Luma](https://luma.com/) for an event-first presentation and [Linear](https://linear.app/) for product exploration through actual interfaces. Layouts, copy and styling are original to this site; no reference-site assets were copied.
+
+The existing Convene365 mark, navy/amber identity and product screenshots are retained. The visual system combines warm paper backgrounds, Manrope headings, italic serif accents, fine rules, ticket details and asymmetric editorial sections. Product screens use demo data, not customer results.
+
+Conference photograph: [Unsplash image source](https://images.unsplash.com/photo-1540575467063-178a50c2df87), downloaded to `assets/img/editorial/conference.jpg`. Used as atmospheric event photography, not a customer endorsement.
+
+## Verification
+
+The rebuild was checked in Chromium at desktop, tablet and mobile widths (1440, 768, 390 and 320 pixels), including navigation, keyboard tabs, comparison switching, FAQ disclosure, the original enquiry flow, clipboard behavior and no-JavaScript fallbacks. The original enquiry flow has since been replaced by the HubSpot embed. Local links, fragment targets and image loading were checked. Automated accessibility checks cover WCAG A/AA rules; these are not a substitute for a full manual accessibility audit.
