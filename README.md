@@ -22,18 +22,12 @@ Then visit http://127.0.0.1:4173. Deploy the five HTML files and the `assets/` d
 
 ## Editing
 
-<<<<<<< HEAD
-1. **Contact email.** Set `CONTACT_EMAIL` at the top of `assets/js/main.js`. It is used by every "Email us" link and by the contact form. It is currently `business@branqorinc.com`.
-2. **Prices.** `pricing.html` shows yearly starting prices (Starter from $625, Professional from $1,099, Enterprise custom, setup from $1,500). Search the file for `From $` and `from $1,500` to change them.
-3. **Customer Insights price.** `compare.html` quotes Microsoft's list price as checked in October 2026. Check it again before publishing and update the footnote date.
-=======
 - Shared styles and design tokens: `assets/css/styles.css`.
 - Interactive behavior: `assets/js/main.js`.
 - Recipient: `CONTACT_EMAIL` in JavaScript. Update the matching `mailto:` links and visible email addresses in the HTML too, so contact still works without JavaScript.
 - Prices and package content: `pricing.html`; also update the price introduction in `index.html`.
 - Header and footer are plain HTML in each page. Update all five for navigation changes.
 - The site uses Manrope and DM Sans, self-hosted as WOFF2. Their SIL Open Font License files are in `assets/fonts/`.
->>>>>>> 970d584a051c47495db911672de09f36937f0d5c
 
 ## Contact behavior
 
